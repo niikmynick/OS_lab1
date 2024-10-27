@@ -2,9 +2,7 @@
 // Created by Никита Кобик on 27.10.2024.
 //
 #include <stdio.h>
-#include <unistd.h>
 #include <dirent.h>
-#include <stdlib.h>
 #include <string.h>
 #include <sys/stat.h>
 #include <time.h>
@@ -12,7 +10,7 @@
 #include "ls.h"
 
 
-void print_file_info(const char *name, const struct stat *file_stat) {
+static void print_file_info(const char *name, const struct stat *file_stat) {
     printf((S_ISDIR(file_stat->st_mode)) ? "d" : "-");
     printf((file_stat->st_mode & S_IRUSR) ? "r" : "-");
     printf((file_stat->st_mode & S_IWUSR) ? "w" : "-");

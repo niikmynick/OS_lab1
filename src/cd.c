@@ -6,7 +6,7 @@
 
 #include "cd.h"
 
-void cmd_cd(const char *path) {
+static void cmd_cd(const char *path) {
     if (chdir(path) != 0) {
         perror("cd");
     }
