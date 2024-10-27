@@ -7,4 +7,4 @@
 
 void cmd_ls(char **args, int argc);
 
-#endif //LS_H
+#endif
