@@ -75,12 +75,14 @@ void execute_command(char *input, const Command *commands) {
                 }
             }
 
-        // command not found
-        fprintf(stderr, "Command not found: %s\n", args[0]);
-        exit(EXIT_FAILURE);
+            // command not found
+            fprintf(stderr, "Command not found: %s\n", args[0]);
+            exit(EXIT_FAILURE);
 
         default:  // parent process
-            if (waitpid(pid, &status, 0) == -1) {
+            waitpid(pid, &status, 0);
+
+            if (status == -1) {
                 perror("waitpid failed");
             }
         break;

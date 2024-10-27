@@ -26,12 +26,14 @@ void cmd_ema_search_int(char **args, int argc) {
 
     int found = 0;
 
-    int buffer[CHUNK_SIZE / sizeof(int)];
+    int buffer[1024];
 
     size_t read_count;
 
-    while ((read_count = fread(buffer, sizeof(int), CHUNK_SIZE / sizeof(int), file)) > 0) {
+    while ((read_count = fread(buffer, sizeof(int), sizeof(buffer) / sizeof(int), file)) > 0) {
+
         for (size_t i = 0; i < read_count; i++) {
+
             if (buffer[i] == target) {
                 printf("Found %d in file.\n", target);
                 found = 1;

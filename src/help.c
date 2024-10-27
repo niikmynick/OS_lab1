@@ -17,7 +17,7 @@ void cmd_help(char **args, int argc) {
     printf("help            - show this help message\n");
     printf("echo            - print arguments to the console\n");
     printf("cat             - display the content of files\n");
-    printf("emasearchi      - search for an integer in a file using EMA\n");
+    printf("emasearchint    - search for an integer in a file using EMA\n");
     printf("binsearch       - search for an integer in a file using binary search\n");
     printf("gendat          - generate random data and write it to a file\n");
     printf("exit            - exit the shell\n");

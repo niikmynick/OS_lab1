@@ -22,9 +22,9 @@ Command commands[] = {
     {"help", cmd_help},
     {"echo", cmd_echo},
     {"cat", cmd_cat},
-    {"ema-search-int", cmd_ema_search_int},
-    {"bin-search", cmd_bin_search},
-    {"generate-data", cmd_generate_data},
+    {"emasearchint", cmd_ema_search_int},
+    {"binsearch", cmd_bin_search},
+    {"gendat", cmd_generate_data},
     {nullptr, nullptr}  // sentinel value for the end of the array
 };
 
