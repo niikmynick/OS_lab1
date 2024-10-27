@@ -12,7 +12,7 @@
 
 void cmd_start_bench(char **args, int argc) {
     if (argc < 4) {
-        fprintf(stderr, "Usage: start-bench <bench-name> <filename> <target> [-c <count>]\n");
+        fprintf(stderr, "Usage: startbench <bench-name> <filename> <target> [-c <count>]\n");
         return;
     }
 
@@ -23,7 +23,7 @@ void cmd_start_bench(char **args, int argc) {
     for (int i = 4; i < argc; i++) {
         if (strcmp(args[i], "-c") == 0) {
             if (i + 1 >= argc) {
-                fprintf(stderr, "Usage: start-bench <bench-name> <filename> <target> [-c <count>]\n");
+                fprintf(stderr, "Usage: startbench <bench-name> <filename> <target> [-c <count>]\n");
                 return;
             }
 
