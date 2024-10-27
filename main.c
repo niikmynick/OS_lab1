@@ -11,6 +11,7 @@
 #include "generate_data.h"
 #include "ema_search_int.h"
 #include "bin_search.h"
+#include "start_bench.h"
 #include "utils.h"
 
 // map command names to their handlers
@@ -25,6 +26,7 @@ Command commands[] = {
     {"emasearchint", cmd_ema_search_int},
     {"binsearch", cmd_bin_search},
     {"gendat", cmd_generate_data},
+    {"startbench", cmd_start_bench},
     {nullptr, nullptr}  // sentinel value for the end of the array
 };
 

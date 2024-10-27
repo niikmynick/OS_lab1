@@ -34,9 +34,21 @@ void cmd_generate_data(char **args, int argc) {
     }
 
     srand((unsigned int)clock());
+
+    printf("\r<");
+    fflush(stdout);
+
     for (int i = 0; i < num_elements; i++) {
+        // print status bar like <====================> 100% where only 10 bars =
+        if (i % (num_elements / 10) == 0) {
+            printf("=");
+            fflush(stdout);
+        }
+
         data[i] = rand() % max_value;
     }
+    printf("> 100%%\n");
+    fflush(stdout);
 
     if (sorted) {
         qsort(data, num_elements, sizeof(int), compare_ints);
