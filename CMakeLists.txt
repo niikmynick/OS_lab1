@@ -8,4 +8,4 @@ include_directories(include)
 file(GLOB_RECURSE SOURCES "src/*.c")
 file(GLOB_RECURSE HEADERS "include/*.h")
 
-add_executable(OS_lab1 ${SOURCES} ${HEADERS})
+add_executable(OS_lab1 main.c ${SOURCES} ${HEADERS})
