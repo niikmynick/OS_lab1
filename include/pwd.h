@@ -7,4 +7,4 @@
 
 void cmd_pwd(char **args, int argc);
 
-#endif //PWD_H
+#endif
