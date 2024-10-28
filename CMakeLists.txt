@@ -3,6 +3,9 @@ project(OS_lab1 C)
 
 set(CMAKE_C_STANDARD 11)
 
+# without optimization
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0")
+
 include_directories(include)
 
 file(GLOB_RECURSE SOURCES "src/*.c")
