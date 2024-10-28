@@ -8,7 +8,7 @@
 
 void cmd_ema_search_int(char **args, int argc) {
   if (argc < 3) {
-    fprintf(stderr, "Usage: ema-search-int <filename> <target>\n");
+    fprintf(stderr, "Usage: emasearchint <filename> <target>\n");
     return;
   }
 

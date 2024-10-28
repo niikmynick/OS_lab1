@@ -5,7 +5,7 @@
 
 void cmd_bin_search(char **args, int argc) {
   if (argc < 3) {
-    fprintf(stderr, "Usage: bin-search <filename> <target>\n");
+    fprintf(stderr, "Usage: binsearch <filename> <target>\n");
     return;
   }
 
