@@ -14,7 +14,7 @@ void cmd_ema_search_int(char **args, int argc) {
 
   const char *filename = args[1];
 
-  const int target = (int)strtol(args[2], nullptr, 10);
+  const int target = (int)strtol(args[2], NULL, 10);
 
   FILE *file = fopen(filename, "rb");
 

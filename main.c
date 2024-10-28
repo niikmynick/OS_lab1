@@ -16,7 +16,7 @@
 
 // map command names to their handlers
 Command commands[] = {
-    {"exit", nullptr},
+    {"exit", NULL},
     {"pwd", cmd_pwd},
     {"cd", cmd_cd_wrapper}, // wrapped cd command to handle arguments
     {"ls", cmd_ls},
@@ -27,7 +27,7 @@ Command commands[] = {
     {"binsearch", cmd_bin_search},
     {"gendat", cmd_generate_data},
     {"startbench", cmd_start_bench},
-    {nullptr, nullptr} // sentinel value for the end of the array
+    {NULL, NULL} // sentinel value for the end of the array
 };
 
 int main() {

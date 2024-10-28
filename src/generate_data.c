@@ -21,8 +21,8 @@ void cmd_generate_data(char **args, int argc) {
 
   const char *filename = args[1];
 
-  const int num_elements = (int)strtol(args[2], nullptr, 10);
-  const int max_value = (int)strtol(args[3], nullptr, 10);
+  const int num_elements = (int)strtol(args[2], NULL, 10);
+  const int max_value = (int)strtol(args[3], NULL, 10);
 
   const int sorted = (argc == 5 && strcmp(args[4], "--sorted") == 0);
 

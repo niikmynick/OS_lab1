@@ -29,7 +29,7 @@ void cmd_start_bench(char **args, int argc) {
         return;
       }
 
-      count = (int)strtol(args[i + 1], nullptr, 10);
+      count = (int)strtol(args[i + 1], NULL, 10);
 
       if (count <= 0) {
         fprintf(stderr, "Count must be a positive integer.\n");

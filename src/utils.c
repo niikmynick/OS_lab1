@@ -16,10 +16,10 @@ int parse_input(char *input, char **args) {
 
   while (token != NULL && argc < MAX_ARGS - 1) {
     args[argc++] = token;
-    token = strtok(nullptr, " ");
+    token = strtok(NULL, " ");
   }
 
-  args[argc] = nullptr;
+  args[argc] = NULL;
 
   return argc;
 }
