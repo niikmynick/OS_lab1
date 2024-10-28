@@ -7,4 +7,4 @@
 
 void cmd_generate_data(char **args, int argc);
 
-#endif //GENERATE_DATA_H
+#endif // GENERATE_DATA_H

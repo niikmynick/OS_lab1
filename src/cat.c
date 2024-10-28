@@ -5,23 +5,22 @@
 
 #include "cat.h"
 
-
 void cmd_cat(char **args, int argc) {
-    if (argc < 2) {
-        fprintf(stderr, "cat: missing argument\n");
-        return;
-    }
+  if (argc < 2) {
+    fprintf(stderr, "cat: missing argument\n");
+    return;
+  }
 
-    FILE *file = fopen(args[1], "r");
-    if (!file) {
-        perror("cat");
-        return;
-    }
+  FILE *file = fopen(args[1], "r");
+  if (!file) {
+    perror("cat");
+    return;
+  }
 
-    int c;
-    while ((c = fgetc(file)) != EOF) {
-        putchar(c);
-    }
+  int c;
+  while ((c = fgetc(file)) != EOF) {
+    putchar(c);
+  }
 
-    fclose(file);
+  fclose(file);
 }

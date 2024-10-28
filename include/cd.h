@@ -7,4 +7,4 @@
 
 void cmd_cd_wrapper(char **args, int argc);
 
-#endif //CD_H
+#endif // CD_H

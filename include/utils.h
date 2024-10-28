@@ -9,8 +9,8 @@
 
 // represents command with its name and handler
 typedef struct {
-    const char *name;
-    void (*func)(char **args, int argc);
+  const char *name;
+  void (*func)(char **args, int argc);
 } Command;
 
 void print_prompt();

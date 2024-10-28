@@ -7,4 +7,4 @@
 
 void cmd_echo(char **args, int argc);
 
-#endif //ECHO_H
+#endif // ECHO_H

@@ -6,9 +6,9 @@
 #include "echo.h"
 
 void cmd_echo(char **args, int argc) {
-    for (int i = 1; i < argc; i++) {
-        printf("%s ", args[i]);
-    }
+  for (int i = 1; i < argc; i++) {
+    printf("%s ", args[i]);
+  }
 
-    printf("\n");
+  printf("\n");
 }

@@ -7,17 +7,17 @@
 #include "cd.h"
 
 static void cmd_cd(const char *path) {
-    if (chdir(path) != 0) {
-        perror("cd");
-    }
+  if (chdir(path) != 0) {
+    perror("cd");
+  }
 }
 
 // removes getting the argument from a command handler
 void cmd_cd_wrapper(char **args, int argc) {
-    if (argc > 1) {
-        cmd_cd(args[1]);
+  if (argc > 1) {
+    cmd_cd(args[1]);
 
-    } else {
-        printf("cd: missing argument\n");
-    }
+  } else {
+    printf("cd: missing argument\n");
+  }
 }
