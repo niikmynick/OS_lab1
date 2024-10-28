@@ -7,6 +7,7 @@
 #include "cd.h"
 #include "echo.h"
 #include "ema_search_int.h"
+#include "execute.h"
 #include "generate_data.h"
 #include "help.h"
 #include "ls.h"
@@ -27,6 +28,7 @@ Command commands[] = {
     {"binsearch", cmd_bin_search},
     {"gendat", cmd_generate_data},
     {"startbench", cmd_start_bench},
+    {"execute", cmd_execute},
     {NULL, NULL} // sentinel value for the end of the array
 };
 
