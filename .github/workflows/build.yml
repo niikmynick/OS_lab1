@@ -26,5 +26,5 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake .. -DCMAKE_C_STANDARD=23
+          cmake ..
           make
